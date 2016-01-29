@@ -9,9 +9,7 @@ def compact(comp, rang):
 		if rang[1] + 1 == r[0] or r[0] <= rang[1] <= r[1] or rang[0] == r[1] + 1 or r[0] <= rang[0] <= r[1]:
 			old = comp.pop(i)
 			comp.append([min(rang[0], old[0]), max(rang[1], old[1])])
-			print "compacted: " + str(r) + "  &&&  " + str(rang)
 			c = True
-
 
 	if not c:
 		comp.append(rang)
